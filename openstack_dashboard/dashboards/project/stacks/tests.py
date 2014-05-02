@@ -18,11 +18,8 @@ from django.conf import settings
 from django.core import exceptions
 from django.core.urlresolvers import reverse
 from django import http
-# <<<<<<< HEAD
-#from django.test.utils import override_settings  # noqa
-#=======
+from django.test.utils import override_settings  # noqa
 from django.utils import html
-#>>>>>>> 0c3b71055c0d169b8245aee773438dbcb46c2bcf
 
 from mox import IsA  # noqa
 
