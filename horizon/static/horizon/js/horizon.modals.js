@@ -301,6 +301,10 @@ horizon.addInitFunction(function() {
         }
       },
       success: function (data, textStatus, jqXHR) {
+        var redir_url = jqXHR.getResponseHeader("X-Horizon-Location");
+        if (redir_url){
+          location.href = redir_url;
+        }
         var update_field_id = $this.attr('data-add-to-field'),
           modal,
           form;
